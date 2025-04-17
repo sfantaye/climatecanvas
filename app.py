@@ -118,8 +118,8 @@ folium.Choropleth(
     geo_data=world,
     name="choropleth",
     data=world,
-    columns=["name", "Temp Anomaly"],
-    key_on="feature.properties.name",
+    columns=["admin", "Temp Anomaly"],  # Replace 'name' with the correct column name
+    key_on="feature.properties.admin",  # Ensure this matches the column name
     fill_color="YlOrRd",
     fill_opacity=0.7,
     line_opacity=0.2,
