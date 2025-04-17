@@ -85,7 +85,7 @@ st.markdown("""
 <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-sky-500 via-cyan-500 to-teal-400 p-4 shadow-lg z-50">
     <div class="container mx-auto flex justify-between items-center px-4">
         <div class="text-white text-3xl font-extrabold tracking-tight" style="font-family: 'Poppins', sans-serif; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-            Climate<span class="text-yellow-300">Canvas</span> 🌍
+            Climate<span class="text-yellow-300">Canvas</span> 🌍 By Sintayehu Fantaye
         </div>
         <!-- Add other nav items here if needed -->
     </div>
