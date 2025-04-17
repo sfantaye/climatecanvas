@@ -9,28 +9,35 @@ By combining cutting-edge technologies like Hugging Face's NLP models, geospatia
 ## 🚀 Features
 
 ### 📖 Interactive Storytelling
-- Engage with a narrative-driven exploration of global climate data.
-- Use sliders, dropdowns, and widgets to interactively explore trends over time.
+- Narrative-driven exploration of global climate data.
+- Use sliders, dropdowns, and widgets to explore trends over time.
 
 ### 🗺️ Geospatial Visualization
-- Explore regional impacts of climate change with interactive choropleth maps.
-- Hover over countries to view temperature anomalies and other key metrics (powered by **Folium** and **GeoPandas**).
+- Visualize regional impacts of climate change via interactive choropleth maps.
+- Hover over countries to explore temperature anomalies and more (powered by **Folium** and **GeoPandas**).
 
 ### 🤖 AI-Powered Insights
-- Generate summaries of selected time periods using Hugging Face's **summarization models**.
-- Ask questions in plain English and receive AI-generated answers via **question-answering models**.
+- Generate summaries of selected periods using **Hugging Face** summarization models.
+- Ask questions in plain English and get AI-generated answers using **transformer-based QA models**.
 
 ### 📈 Predictive Analytics
-- Train a simple ML model to predict future CO₂ levels based on historical data.
-- Visualize predictions with dynamic **Plotly** charts.
+- Train a simple ML model to predict future CO₂ levels from historical data.
+- Visualize predictions with dynamic charts using **Plotly**.
 
 ### 🔐 Secure API Key Management
-- API keys are securely managed using `.env` files.
+- Use `.env` files to securely store Hugging Face API keys.
 
 ---
 
 ## 🛠️ Installation
 
 ### 📋 Prerequisites
+
 - Python 3.8 or higher
 - Git (optional, for cloning the repo)
+
+### 📥 Clone the Repository
+
+```bash
+git clone https://github.com/sfantaye/climatecanvas.git
+cd climatecanvas
