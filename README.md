@@ -38,5 +38,5 @@ By combining cutting-edge technologies like Hugging Face's NLP models, geospatia
 ### 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/climatecanvas.git
+git clone https://github.com/sfantaye/climatecanvas.git
 cd climatecanvas
