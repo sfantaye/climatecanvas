@@ -41,3 +41,7 @@ By combining cutting-edge technologies like Hugging Face's NLP models, geospatia
 ```bash
 git clone https://github.com/sfantaye/climatecanvas.git
 cd climatecanvas
+
+
+This project is licensed under the MIT License.
+See the LICENSE file for more information.
