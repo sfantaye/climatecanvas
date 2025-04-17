@@ -48,9 +48,11 @@ def load_data():
 
 @st.cache_data
 def load_geospatial_data():
-    # Load the dataset from the local 'data' folder
     data_path = os.path.join("data", "ne_110m_admin_0_countries.shp")
     world = gpd.read_file(data_path)
+    
+    # Print column names for debugging
+    st.write("Columns in the dataset:", list(world.columns))
     
     # Simulate regional temperature anomalies
     np.random.seed(42)
@@ -118,8 +120,8 @@ folium.Choropleth(
     geo_data=world,
     name="choropleth",
     data=world,
-    columns=["admin", "Temp Anomaly"],  # Replace 'name' with the correct column name
-    key_on="feature.properties.admin",  # Ensure this matches the column name
+    columns=["NAME", "Temp Anomaly"],  # Replace 'name' with the correct column name
+    key_on="feature.properties.NAME",  # Ensure this matches the column name
     fill_color="YlOrRd",
     fill_opacity=0.7,
     line_opacity=0.2,
@@ -127,7 +129,7 @@ folium.Choropleth(
 ).add_to(m)
 
 # Add tooltips for interactivity
-tooltip = folium.features.GeoJsonTooltip(fields=['admin', 'Temp Anomaly'], aliases=['Country', 'Temp Anomaly'])
+tooltip = folium.features.GeoJsonTooltip(fields=['NAME', 'Temp Anomaly'], aliases=['Country', 'Temp Anomaly'])
 folium.GeoJson(world, tooltip=tooltip).add_to(m)
 
 # Display the map in Streamlit
