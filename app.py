@@ -127,7 +127,7 @@ folium.Choropleth(
 ).add_to(m)
 
 # Add tooltips for interactivity
-tooltip = folium.features.GeoJsonTooltip(fields=['name', 'Temp Anomaly'], aliases=['Country', 'Temp Anomaly'])
+tooltip = folium.features.GeoJsonTooltip(fields=['admin', 'Temp Anomaly'], aliases=['Country', 'Temp Anomaly'])
 folium.GeoJson(world, tooltip=tooltip).add_to(m)
 
 # Display the map in Streamlit
