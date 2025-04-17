@@ -48,8 +48,10 @@ def load_data():
 
 @st.cache_data
 def load_geospatial_data():
-    # Load a sample GeoJSON file (e.g., world map)
-    world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
+    # Load the dataset from the local 'data' folder
+    data_path = os.path.join("data", "ne_110m_admin_0_countries.shp")
+    world = gpd.read_file(data_path)
+    
     # Simulate regional temperature anomalies
     np.random.seed(42)
     world['Temp Anomaly'] = np.random.normal(loc=0.8, scale=0.2, size=len(world))
